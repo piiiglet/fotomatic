@@ -1,0 +1,73 @@
+/* About Us Banner */
+
+#about-us-banner {
+  background-image: url("../images/banner-about-us.jpg");
+}
+
+/* Staff List */
+
+#staff-section {
+  padding: 3.75rem 1.5rem;
+  background-color: rgb(248, 248, 248);
+  line-height: 1.4;
+  color: #4a4a4a;
+}
+
+.staff-list {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2.125rem;
+}
+
+.staff-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3.875rem 3.875rem 1.75rem 3.875rem;
+  border: solid 1px rgba(151, 151, 151, 0.2);
+  background-color: white;
+}
+
+.staff-member .image-container {
+  border-radius: 4px;
+  margin-bottom: .6875rem;
+}
+
+.staff-member .info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.staff-member strong {
+  margin-bottom: .25rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.staff-member .role {
+  font-size: .875rem;
+}
+
+@media screen and (min-width: 1170px) {
+  .staff-member {
+    flex-direction: row;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .staff-member .info {
+    flex-grow: 1;
+  }
+}
+
+@media screen and (min-width: 580px) {
+  #staff-section {
+    padding: 0;
+  }
+
+  .staff-member {
+    flex-direction: column;
+    padding-left: 0;
+  }
+}

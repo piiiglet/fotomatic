@@ -1,0 +1,36 @@
+/* Product Detail Banner */
+
+#product-detail-banner {
+  background-image: url("../images/banner-product.jpg");
+}
+
+/* Product Details Section */
+
+product-details {
+  display: flex;
+  padding: 2.625rem;
+  background-color: rgb(240, 240, 240);
+  color: #4a4a4a;
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 20rem;
+  height: 19rem;
+}
+
+.detail h3 {
+  font-size: 1.875rem;
+}
+
+.detail .image-container {
+  width: 6.25rem;
+}
+
+.detail p {
+  line-height: 1.4;
+  font-weight: 300;
+}

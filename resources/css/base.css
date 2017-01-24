@@ -1,0 +1,173 @@
+/* Universal Styles */
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px; 
+}
+
+.main-content {
+  position: relative;
+  top: 5.3125rem; /* To offset for fixed header. */
+}
+
+.center {
+  text-align: center;
+}
+
+.button {
+  background-color: #4a4a4a;
+  color: white;
+}
+
+.image-container {
+  overflow: hidden;
+}
+
+.image-container img {
+  display: block;
+}
+
+@media only screen and (max-width: 760px) {
+  .main-content {
+    top: 2.5625rem;
+  }
+}
+
+/* Header */
+
+#header {
+  position: fixed;
+  border-bottom: solid 1px #c6c1c1;
+  background-color: white;
+}
+
+#header .content {
+  display: flex;
+  align-items: center;
+  padding: 1.875rem;
+}
+
+#header .logo {
+  flex: 1;
+}
+
+#header .navigation {
+  display: flex;
+}
+
+.navigation li {
+  padding-left: 3.5rem;
+}
+
+.navigation a {
+  vertical-align: bottom;
+  line-height: 1.6;
+  font-size: 1rem;
+  color: #4a4a4a;
+}
+
+.navigation a.active {
+  font-weight: 600;
+  color: #4a90e2;
+}
+
+#header .icon {
+  width: 1rem;
+  padding-left: .75rem;
+}
+
+#header .mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 760px) {
+  #header .desktop {
+    display: none;
+  }
+
+  #header .mobile {
+    display: block;
+  }
+
+  #header .content {
+    padding: .5rem 0;
+  }
+
+  #header .mobile.navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+
+  #header .mobile.navigation li {
+    padding: 0;
+  }
+
+  #header .mobile.navigation .button {
+    padding: .1875rem .5rem;
+    background-color: #9dc20b;
+    line-height: 1.6;
+    color: white;
+  }
+}
+
+/* Component - Banner */
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 43.5rem;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.banner h1 {
+  font-family: "Rubik", sans-serif;
+  font-size: 5rem;
+  color: white;
+}
+
+@media only screen and (max-width: 760px) {
+  .banner {
+    height: 28rem;
+  }
+
+  .banner h1 {
+    font-size: 3.125rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .banner {
+    height: 20rem;
+  }
+
+  .banner h1 {
+    font-size: 1.875rem;
+  }
+}
+
+/* Footer */
+
+#footer {
+  background-color: #9b9b9b;
+  padding: 1.5rem 2rem;
+}
+
+#footer .content {
+  color: white;
+  display: flex;
+  font-size: .75rem;
+}
+
+#footer .copyright {
+  flex-grow: 1;
+}
+
+@media only screen and (max-width: 760px) {
+  #footer .content {
+    font-size: .625rem;
+  }
+}
