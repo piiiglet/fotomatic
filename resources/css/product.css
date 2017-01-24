@@ -6,8 +6,10 @@
 
 /* Product Details Section */
 
-product-details {
+#product-details {
   display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
   padding: 2.625rem;
   background-color: rgb(240, 240, 240);
   color: #4a4a4a;
@@ -24,13 +26,22 @@ product-details {
 
 .detail h3 {
   font-size: 1.875rem;
+  margin-bottom: 10px;
 }
 
 .detail .image-container {
   width: 6.25rem;
+  overflow: visible;
 }
 
 .detail p {
   line-height: 1.4;
   font-weight: 300;
+}
+
+
+@media only screen and (max-width: 700px) {
+  .detail {
+    width: 100%;
+  }
 }
